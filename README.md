@@ -7,7 +7,7 @@ RickrollPrinter is a Python package that prints Rickroll lyrics as ASCII art and
 You can install this package using pip:
 
 ```bash
-pip install rickrollprinter==0.1.0
+pip install rickrollprinter==0.1.3
 ```
 
 # Project Setup
