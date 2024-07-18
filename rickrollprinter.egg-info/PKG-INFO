@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: rickrollprinter
-Version: 0.1.0
+Version: 0.1.3
 Summary: A Python package that prints Rickroll lyrics and plays the song.
 Home-page: https://github.com/jayounghoyos/rickrollprinter
 Author: Juan Andrés Young Hoyos
@@ -22,7 +22,7 @@ RickrollPrinter is a Python package that prints Rickroll lyrics as ASCII art and
 You can install this package using pip:
 
 ```bash
-pip install rickrollprinter
+pip install rickrollprinter==0.1.0
 ```
 
 # Project Setup
@@ -79,8 +79,6 @@ rickroll_time()
 ```bash
 pip install --upgrade setuptools wheel
 python setup.py sdist bdist_wheel
-```
-
-```bash
-
+pip install twine
+twine upload dist/*
 ```
