@@ -1,3 +1,18 @@
+Metadata-Version: 2.1
+Name: rickrollprinter
+Version: 0.1.0
+Summary: A Python package that prints Rickroll lyrics and plays the song.
+Home-page: https://github.com/jayounghoyos/rickrollprinter
+Author: Juan Andrés Young Hoyos
+Author-email: juanandresyounghoyos@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pygame
+
 # RickrollPrinter
 
 RickrollPrinter is a Python package that prints Rickroll lyrics as ASCII art and plays the song "Never Gonna Give You Up" by Rick Astley. This project demonstrates how to create and organize a Python package with dependencies.
@@ -7,7 +22,7 @@ RickrollPrinter is a Python package that prints Rickroll lyrics as ASCII art and
 You can install this package using pip:
 
 ```bash
-pip install rickrollprinter==0.1.0
+pip install rickrollprinter
 ```
 
 # Project Setup
@@ -64,6 +79,8 @@ rickroll_time()
 ```bash
 pip install --upgrade setuptools wheel
 python setup.py sdist bdist_wheel
-pip install twine
-twine upload dist/*
+```
+
+```bash
+
 ```

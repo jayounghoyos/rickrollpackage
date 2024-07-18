@@ -70,3 +70,5 @@ def rickrollTime():
     # Keep the program running until the song finishes
     while pygame.mixer.music.get_busy():
         time.sleep(1)
+
+rickrollTime()
