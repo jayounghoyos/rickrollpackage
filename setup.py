@@ -1,18 +1,21 @@
 from setuptools import setup, find_packages
 
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 setup(
     name="rickrollprinter",
     version="0.1.0",
     packages=find_packages(),
     install_requires=[
-        'pygame',  # Add pygame as a dependency
+        'pygame',
     ],
-    author="jayoungh",
+    author="Juan Andrés Young Hoyos",
     author_email="juanandresyounghoyos@gmail.com",
-    description="A Python package that prints Rickroll and plays the song.",
-    long_description=open("README.md").read(),
+    description="A Python package that prints Rickroll lyrics and plays the song.",
+    long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/rickrollprinter",
+    url="https://github.com/jayounghoyos/rickrollprinter",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

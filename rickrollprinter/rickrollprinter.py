@@ -1,6 +1,6 @@
-import pygame
-import time
 import os
+import time
+import pygame
 
 def rickrollTime():
     rick ="""
@@ -55,5 +55,20 @@ def rickrollTime():
     ,!,!,!,!,!,!,!,!,!,!,!,7,O,>,!,!,C,M,M,M,$,–,–,!,N,M,M,M,M,M,M,M,M,M,M,7,!,!,!,!,!,!,!,!,!,!,!,!,!,!,
     ,!,!,!,!,!,!,!,!,!,!,!,!,!,!,!,!,H,M,M,M,O,–,–,–,C,M,M,M,M,M,M,M,M,M,M,C,!,!,!,!,!,!,!,!,!,!,!,!,!,!,
     ``````"""
-
     print(rick)
+
+    # Initialize pygame mixer
+    pygame.mixer.init()
+    
+    # Load the song
+    file_path = os.path.join(os.path.dirname(__file__), 'never_gonna_give_you_up.mp3')
+    pygame.mixer.music.load(file_path)
+    
+    # Play the song
+    pygame.mixer.music.play()
+    
+    # Keep the program running until the song finishes
+    while pygame.mixer.music.get_busy():
+        time.sleep(1)
+
+rickrollTime()
